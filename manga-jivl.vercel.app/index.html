@@ -600,6 +600,11 @@
 
         .product-info {
           padding: 16px 0;
+          text-align: left;
+        }
+
+        .product-info ul {
+          text-align: left;
         }
 
         .product-info h3 {
@@ -612,9 +617,25 @@
           margin-bottom: 16px;
         }
 
+        .product-features {
+          margin-bottom: 20px;
+        }
+
         .product-features li {
           font-size: 13px;
           line-height: 1.5;
+          padding-left: 16px;
+          margin-bottom: 6px;
+          position: relative;
+        }
+
+        .product-features li:before {
+          content: "・";
+          position: absolute;
+          left: 0;
+          top: 0;
+          color: var(--primary-color);
+          font-weight: 500;
         }
 
         /* サイエンスセクション */
@@ -724,6 +745,12 @@
 
         .product-content {
           padding: 20px 12px;
+        }
+
+        .product-features li {
+          font-size: 12px;
+          padding-left: 14px;
+          margin-bottom: 4px;
         }
 
         .testimonial-card {
