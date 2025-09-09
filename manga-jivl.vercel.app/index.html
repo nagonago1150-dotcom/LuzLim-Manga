@@ -854,7 +854,7 @@
           font-size: 13px;
         }
 
-        /* モバイル版で特定の改行を調整 */
+        /* モバイル版で特定の改行を調整（漫画ナレーションは除く） */
         .section-subtitle br {
           display: none;
         }
@@ -865,6 +865,20 @@
 
         .footer-message br {
           display: none;
+        }
+
+        /* 漫画ナレーションの改行は常に保持 */
+        .narration br {
+          display: inline !important;
+        }
+
+        /* 漫画ナレーションのモバイル最適化 */
+        .narration {
+          text-align: center;
+          line-height: 1.8;
+          font-size: 16px;
+          padding: 0 16px;
+          margin-bottom: 8px;
         }
 
         .section-subtitle {
