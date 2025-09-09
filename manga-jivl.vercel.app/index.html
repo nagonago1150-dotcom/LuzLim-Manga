@@ -525,6 +525,34 @@
           padding: 16px 0;
         }
 
+      /* 広告表示ラベル */
+      .promotion-label {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, var(--luxury-brown), var(--warm-brown));
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+        z-index: 100;
+        animation: promotionPulse 3s ease-in-out infinite;
+      }
+
+      @keyframes promotionPulse {
+        0%, 100% { 
+          opacity: 0.9; 
+          transform: scale(1);
+        }
+        50% { 
+          opacity: 1; 
+          transform: scale(1.05);
+        }
+      }
+
         /* コミックセクションのモバイル最適化 */
         .comic-viewer {
           padding: 24px 0;
@@ -897,6 +925,14 @@
         .footer-button br {
           display: none;
         }
+
+        /* 広告ラベルのモバイル調整 */
+        .promotion-label {
+          top: 10px;
+          right: 10px;
+          font-size: 12px;
+          padding: 6px 12px;
+        }
       }
 
       /* お客様の声のテキスト配置調整 */
@@ -924,6 +960,7 @@
 
       <!-- ヘッダー -->
       <header class="header">
+        <div class="promotion-label">広告</div>
         <div class="container">
           <h1 class="logo">LuzLim</h1>
           <p class="tagline">デリケートゾーンケア</p>
