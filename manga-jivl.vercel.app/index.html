@@ -27,21 +27,22 @@
     <script type="module" crossorigin src="assets/index-U9MFb4ym.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-C6Zq50ZD.css">
     <style>
-      /* Enhanced Color Palette */
+      /* Luxury Brown Color Palette */
       :root {
-        --primary-gradient: linear-gradient(135deg, #FFB6C1, #FFC0CB, #FFE4E1);
-        --secondary-gradient: linear-gradient(135deg, #F0E6FF, #E6E6FA, #DDA0DD);
-        --accent-gradient: linear-gradient(135deg, #FFB07A, #FF69B4, #DA70D6);
-        --glow-pink: #FFB6C1;
-        --glow-purple: #DDA0DD;
-        --glow-coral: #FF7F50;
+        --primary-gradient: linear-gradient(135deg, #8B4513, #A0522D, #CD853F);
+        --secondary-gradient: linear-gradient(135deg, #F5E6D3, #E8D5C4, #DEB887);
+        --accent-gradient: linear-gradient(135deg, #654321, #8B4513, #A0522D);
+        --luxury-brown: #654321;
+        --warm-brown: #8B4513;
+        --soft-beige: #F5E6D3;
+        --gold-accent: #DAA520;
       }
 
-      /* Animated Background */
+      /* Luxury Animated Background */
       body {
-        background: linear-gradient(-45deg, #FFE4E1, #F0E6FF, #E6E6FA, #FFB6C1);
+        background: linear-gradient(-45deg, #F5E6D3, #E8D5C4, #DEB887, #F4E4BC);
         background-size: 400% 400%;
-        animation: gradientShift 15s ease infinite;
+        animation: gradientShift 20s ease infinite;
       }
 
       @keyframes gradientShift {
@@ -50,11 +51,11 @@
         100% { background-position: 0% 50%; }
       }
 
-      /* Enhanced Header with Glow */
+      /* Luxury Header with Subtle Glow */
       .header {
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(245, 230, 211, 0.95);
         backdrop-filter: blur(10px);
-        box-shadow: 0 4px 20px rgba(255, 182, 193, 0.3);
+        box-shadow: 0 4px 20px rgba(139, 69, 19, 0.2);
       }
 
       .logo {
@@ -62,13 +63,13 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-shadow: 0 0 20px var(--glow-pink);
-        animation: logoGlow 3s ease-in-out infinite alternate;
+        text-shadow: 0 0 20px var(--luxury-brown);
+        animation: logoGlow 4s ease-in-out infinite alternate;
       }
 
       @keyframes logoGlow {
-        from { filter: drop-shadow(0 0 5px var(--glow-pink)); }
-        to { filter: drop-shadow(0 0 15px var(--glow-purple)); }
+        from { filter: drop-shadow(0 0 3px var(--warm-brown)); }
+        to { filter: drop-shadow(0 0 8px var(--gold-accent)); }
       }
 
       /* Floating Animation for Sections */
@@ -91,13 +92,13 @@
         }
       }
 
-      /* Enhanced CTA Buttons */
+      /* Luxury CTA Buttons */
       .cta-button {
         background: var(--accent-gradient);
         position: relative;
         overflow: hidden;
-        animation: pulse 2s infinite;
-        box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4);
+        animation: pulse 3s infinite;
+        box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3);
       }
 
       .cta-button::before {
@@ -116,52 +117,52 @@
       }
 
       @keyframes pulse {
-        0% { box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4); }
-        50% { box-shadow: 0 4px 30px rgba(255, 105, 180, 0.7); }
-        100% { box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4); }
+        0% { box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3); }
+        50% { box-shadow: 0 4px 30px rgba(218, 165, 32, 0.5); }
+        100% { box-shadow: 0 4px 20px rgba(139, 69, 19, 0.3); }
       }
 
       /* Comic Viewer Enhancement */
       .comic-viewer {
-        background: var(--primary-gradient);
+        background: var(--secondary-gradient);
         position: relative;
       }
 
       .comic-scene img {
         transition: transform 0.3s ease, filter 0.3s ease;
-        filter: drop-shadow(0 8px 25px rgba(221, 160, 221, 0.3));
+        filter: drop-shadow(0 8px 25px rgba(139, 69, 19, 0.2));
       }
 
       .comic-scene img:hover {
-        transform: scale(1.05);
-        filter: drop-shadow(0 12px 35px rgba(221, 160, 221, 0.5));
+        transform: scale(1.03);
+        filter: drop-shadow(0 12px 35px rgba(218, 165, 32, 0.3));
       }
 
       /* Section Backgrounds */
       .products-section {
-        background: var(--secondary-gradient);
+        background: rgba(245, 230, 211, 0.8);
         position: relative;
       }
 
       .science-section {
-        background: var(--primary-gradient);
+        background: var(--secondary-gradient);
       }
 
       .testimonials-section {
-        background: var(--secondary-gradient);
+        background: rgba(232, 213, 196, 0.6);
       }
 
       /* Testimonial Cards Enhancement */
       .testimonial-card {
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 182, 193, 0.3);
+        border: 1px solid rgba(139, 69, 19, 0.2);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
       .testimonial-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(255, 105, 180, 0.2);
+        box-shadow: 0 15px 35px rgba(139, 69, 19, 0.15);
       }
 
       /* Product Steps Animation */
