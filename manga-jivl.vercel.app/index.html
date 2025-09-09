@@ -427,6 +427,18 @@
         box-shadow: 0 4px 20px rgba(139, 69, 19, 0.15);
       }
 
+      /* Specific adjustments for feature images */
+      .product-step:nth-child(1) .product-content img,
+      .product-step:nth-child(3) .product-content img {
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .product-step:nth-child(2) .product-content img {
+        object-fit: cover;
+        object-position: center bottom;
+      }
+
       .product-info {
         flex: 1;
         padding: 20px 0 20px 80px;
