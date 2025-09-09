@@ -745,6 +745,36 @@
       .container > * {
         animation: fadeIn 1s ease-out;
       }
+
+      /* New Review Format Styles */
+      .review-content {
+        margin-bottom: 24px;
+      }
+
+      .review-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--primary-color);
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+
+      .review-text {
+        font-size: 14px;
+        color: var(--text-primary);
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .review-title {
+          font-size: 15px;
+        }
+
+        .review-text {
+          font-size: 13px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -977,53 +1007,32 @@
           
           <div class="testimonials-grid">
             <article class="testimonial-card">
-              <div class="before-after">
-                <div class="before">
-                  <span class="label">Before</span>
-                  <p>お風呂上がりにニオイが気になる</p>
-                </div>
-                <div class="after">
-                  <span class="label">After</span>
-                  <p>1週間でニオイが気にならなくなった</p>
-                </div>
+              <div class="review-content">
+                <h3 class="review-title">「デリケートゾーンの臭い対策に買いました」</h3>
+                <p class="review-text">今までボディソープで洗っていましたが、ラズリムのフェムケアソープを使ったら夜までニオイが気にならなくなりました！</p>
               </div>
               <div class="user-info">
-                <p class="comment">「毎日安心して過ごせるように！」</p>
-                <p class="profile">32歳・会社員</p>
+                <p class="profile">20代女性</p>
               </div>
             </article>
 
             <article class="testimonial-card">
-              <div class="before-after">
-                <div class="before">
-                  <span class="label">Before</span>
-                  <p>デリケートゾーンが乾燥してかゆみ</p>
-                </div>
-                <div class="after">
-                  <span class="label">After</span>
-                  <p>乾燥とかゆみが改善して快適</p>
-                </div>
+              <div class="review-content">
+                <h3 class="review-title">「泡だてなくてもそのまま出てくるので、すごく楽！」</h3>
+                <p class="review-text">もっちり濃密泡で出てくるので便利です。洗い上がりもしっとりしています。</p>
               </div>
               <div class="user-info">
-                <p class="comment">「しみないのにしっかり保湿」</p>
-                <p class="profile">28歳・敏感肌</p>
+                <p class="profile">30代女性</p>
               </div>
             </article>
 
             <article class="testimonial-card">
-              <div class="before-after">
-                <div class="before">
-                  <span class="label">Before</span>
-                  <p>香りの強いボディソープは刺激が強い</p>
-                </div>
-                <div class="after">
-                  <span class="label">After</span>
-                  <p>香水のような上品な香りでリラックス</p>
-                </div>
+              <div class="review-content">
+                <h3 class="review-title">「年齢のせい？」と思ったニオイがスッキリ</h3>
+                <p class="review-text">40代になってからニオイが強くなったような気がして、「年齢のせいかな...」と落ち込んでいました。でもラズリムを使ってから気にならなくなりました！</p>
               </div>
               <div class="user-info">
-                <p class="comment">「毎日使うのが楽しみに」</p>
-                <p class="profile">35歳・主婦</p>
+                <p class="profile">40代女性</p>
               </div>
             </article>
 
