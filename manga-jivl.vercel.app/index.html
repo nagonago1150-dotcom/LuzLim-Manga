@@ -6,11 +6,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ラズリム - デリケートゾーンケア | フェムケアソープ</title>
+    <title>LuzLim - デリケートゾーンケア | フェムケアソープ</title>
     <meta name="description" content="デリケートゾーンの悩みを解決するフェムケアソープ。ニオイ対策・保湿・やさしい洗い心地で毎日快適に。初回限定1,980円。">
     
     <!-- OGP -->
-    <meta property="og:title" content="ラズリム - デリケートゾーンケア">
+    <meta property="og:title" content="LuzLim - デリケートゾーンケア">
     <meta property="og:description" content="デリケートゾーンの悩みを解決するフェムケアソープ。ニオイ対策・保湿・やさしい洗い心地。">
     <meta property="og:type" content="website">
     
@@ -26,6 +26,219 @@
     
     <script type="module" crossorigin src="assets/index-U9MFb4ym.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-C6Zq50ZD.css">
+    <style>
+      /* Enhanced Color Palette */
+      :root {
+        --primary-gradient: linear-gradient(135deg, #FFB6C1, #FFC0CB, #FFE4E1);
+        --secondary-gradient: linear-gradient(135deg, #F0E6FF, #E6E6FA, #DDA0DD);
+        --accent-gradient: linear-gradient(135deg, #FFB07A, #FF69B4, #DA70D6);
+        --glow-pink: #FFB6C1;
+        --glow-purple: #DDA0DD;
+        --glow-coral: #FF7F50;
+      }
+
+      /* Animated Background */
+      body {
+        background: linear-gradient(-45deg, #FFE4E1, #F0E6FF, #E6E6FA, #FFB6C1);
+        background-size: 400% 400%;
+        animation: gradientShift 15s ease infinite;
+      }
+
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      /* Enhanced Header with Glow */
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(255, 182, 193, 0.3);
+      }
+
+      .logo {
+        background: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 0 20px var(--glow-pink);
+        animation: logoGlow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes logoGlow {
+        from { filter: drop-shadow(0 0 5px var(--glow-pink)); }
+        to { filter: drop-shadow(0 0 15px var(--glow-purple)); }
+      }
+
+      /* Floating Animation for Sections */
+      .comic-scene, .testimonial-card, .product-step {
+        animation: floatUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .comic-scene:nth-child(1) { animation-delay: 0.1s; }
+      .comic-scene:nth-child(2) { animation-delay: 0.2s; }
+      .comic-scene:nth-child(3) { animation-delay: 0.3s; }
+      .comic-scene:nth-child(4) { animation-delay: 0.4s; }
+      .comic-scene:nth-child(5) { animation-delay: 0.5s; }
+
+      @keyframes floatUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Enhanced CTA Buttons */
+      .cta-button {
+        background: var(--accent-gradient);
+        position: relative;
+        overflow: hidden;
+        animation: pulse 2s infinite;
+        box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4);
+      }
+
+      .cta-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        transition: left 0.5s;
+      }
+
+      .cta-button:hover::before {
+        left: 100%;
+      }
+
+      @keyframes pulse {
+        0% { box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4); }
+        50% { box-shadow: 0 4px 30px rgba(255, 105, 180, 0.7); }
+        100% { box-shadow: 0 4px 20px rgba(255, 105, 180, 0.4); }
+      }
+
+      /* Comic Viewer Enhancement */
+      .comic-viewer {
+        background: var(--primary-gradient);
+        position: relative;
+      }
+
+      .comic-scene img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+        filter: drop-shadow(0 8px 25px rgba(221, 160, 221, 0.3));
+      }
+
+      .comic-scene img:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 12px 35px rgba(221, 160, 221, 0.5));
+      }
+
+      /* Section Backgrounds */
+      .products-section {
+        background: var(--secondary-gradient);
+        position: relative;
+      }
+
+      .science-section {
+        background: var(--primary-gradient);
+      }
+
+      .testimonials-section {
+        background: var(--secondary-gradient);
+      }
+
+      /* Testimonial Cards Enhancement */
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 182, 193, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(255, 105, 180, 0.2);
+      }
+
+      /* Product Steps Animation */
+      .product-step {
+        transition: transform 0.3s ease;
+      }
+
+      .product-step:hover {
+        transform: scale(1.02);
+      }
+
+      .step-number {
+        background: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: shimmer 2s linear infinite;
+      }
+
+      @keyframes shimmer {
+        0% { background-position: -200px 0; }
+        100% { background-position: 200px 0; }
+      }
+
+      /* Scroll Indicator Enhancement */
+      .scroll-indicator {
+        animation: bounce 2s infinite, colorShift 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes colorShift {
+        from { color: var(--glow-pink); }
+        to { color: var(--glow-purple); }
+      }
+
+      /* Science Section Enhancement */
+      .science-column, .natural-column {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 182, 193, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      .science-column:hover, .natural-column:hover {
+        transform: translateY(-10px);
+      }
+
+      /* Footer Enhancement */
+      .footer {
+        background: linear-gradient(135deg, #4B0082, #8A2BE2, #9370DB);
+      }
+
+      /* Mobile Responsive Enhancements */
+      @media (max-width: 768px) {
+        .logo {
+          font-size: 24px;
+        }
+        
+        .comic-scene img {
+          border-radius: 12px;
+        }
+        
+        .cta-button {
+          width: 90%;
+          max-width: 300px;
+        }
+      }
+
+      /* Loading Animation */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .container > * {
+        animation: fadeIn 1s ease-out;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
@@ -55,7 +268,7 @@
           </figure>
 
           <figure class="comic-scene">
-            <img src="manga/04.png" alt="ラズリムでケア" loading="lazy" />
+            <img src="manga/04.png" alt="LuzLimでケア" loading="lazy" />
             <figcaption>
               <p class="narration">ワンプッシュのもっちり泡で、肌に優しく摩擦レス。良い香りに包まれて、面倒なケアがこれ１本で。</p>
             </figcaption>
@@ -69,7 +282,7 @@
           </figure>
 
           <figure class="comic-scene">
-            <img src="manga/05.png" alt="ラズリムで自信を" loading="lazy" />
+            <img src="manga/05.png" alt="LuzLimで自信を" loading="lazy" />
             <figcaption>
               <p class="narration">悩みの根本から解決！たった1本で、「がんばりすぎない美しさ」へ。</p>
             </figcaption>
@@ -86,16 +299,16 @@
       <section class="cta-section primary">
         <div class="container">
           <div class="cta-content">
-            <img src="products/link%2bu_KV_1206_small.jpg" alt="ラズリム フェムケアソープ" class="product-image" loading="lazy">
-            <div class="offer-badge">ラズリム</div>
-            <h2>ラズリムを一度お試しになりませんか？</h2>
+            <img src="products/link%2bu_KV_1206_small.jpg" alt="LuzLim フェムケアソープ" class="product-image" loading="lazy">
+            <div class="offer-badge">LuzLim</div>
+            <h2>LuzLimを一度お試しになりませんか？</h2>
             <p class="price">
               <span class="trial-label">初回限定</span>
               <span class="special">¥1,980</span>
               <span class="tax">（税込）</span>
             </p>
             <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button" data-ga-event="cta_click" data-ga-label="top">
-              ラズリムを試す
+              LuzLimを試す
             </a>
             <ul class="benefits">
               <li>送料無料</li>
@@ -112,7 +325,7 @@
       <section class="products-section">
         <div class="container">
           <div class="routine-header">
-            <h2 class="section-title">ラズリムの4つの特徴<br>デリケートゾーンケア</h2>
+            <h2 class="section-title">LuzLimの4つの特徴<br>デリケートゾーンケア</h2>
           </div>
           
           <div class="products-detail">
@@ -188,7 +401,7 @@
       <!-- Science × Natural -->
       <section class="science-section">
         <div class="container">
-          <h2 class="section-title">ラズリムの安心・安全</h2>
+          <h2 class="section-title">LuzLimの安心・安全</h2>
           <p class="section-subtitle">医学的根拠と自然由来成分で、デリケートゾーンをやさしくケア</p>
           
           <div class="science-natural-grid">
@@ -303,7 +516,7 @@
       <!-- 最終CTA -->
       <section class="cta-section final">
         <div class="container">
-          <h2>ラズリムで始めるデリケートゾーンケア</h2>
+          <h2>LuzLimで始めるデリケートゾーンケア</h2>
           <p class="lead">毎日のお風呂で快適に、ニオイの悩みを解決</p>
           
           <div class="cta-box">
@@ -314,7 +527,7 @@
             </p>
             
             <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button large" data-ga-event="cta_click" data-ga-label="bottom">
-              ラズリムを試す
+              LuzLimを試す
             </a>
             
             <div class="guarantees">
@@ -343,7 +556,7 @@
       <!-- フッター -->
       <footer class="footer">
         <div class="container">
-          <p>&copy; 2025 ラズリム. All rights reserved.</p>
+          <p>&copy; 2025 LuzLim. All rights reserved.</p>
           <nav>
             <a href="index-2.html">プライバシーポリシー</a>
             <a href="index-3.html">利用規約</a>
@@ -356,7 +569,7 @@
     <!-- 追従CTA（スマホ用） -->
     <div class="sticky-cta mobile-only">
       <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button" data-ga-event="cta_click" data-ga-label="sticky">
-        ラズリム¥1,980
+        LuzLim¥1,980
       </a>
     </div>
 
