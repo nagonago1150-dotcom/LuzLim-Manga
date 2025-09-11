@@ -1036,12 +1036,15 @@
         /* testimonialsセクション修正 */
         .testimonials-section {
           width: 100%;
+          padding: 50px 0;
         }
         
         .testimonials-section .container {
           width: 100%;
+          max-width: 100%;
           margin: 0 auto;
           padding: 0 16px;
+          box-sizing: border-box;
         }
         
         .testimonials-grid {
@@ -1050,11 +1053,15 @@
           gap: 20px;
           width: 100%;
           margin: 0 auto;
+          padding: 0;
         }
         
         .testimonial-card {
           width: 100%;
+          max-width: 100%;
           margin: 0 auto;
+          padding: 24px 16px;
+          box-sizing: border-box;
           text-align: center;
         }
         
@@ -1063,12 +1070,40 @@
         .footer {
           width: 100%;
           text-align: center;
+          padding-left: 0;
+          padding-right: 0;
         }
         
         .cta-section .container,
         .footer .container {
           width: 100%;
+          max-width: 100%;
           margin: 0 auto;
+          padding: 0 16px;
+          box-sizing: border-box;
+        }
+        
+        /* 全てのセクションで左右余白を統一 */
+        .cta-section,
+        .footer,
+        .products-section,
+        .science-section {
+          width: 100%;
+          margin: 0;
+          padding-left: 0;
+          padding-right: 0;
+        }
+        
+        .cta-section .container,
+        .footer .container,
+        .products-section .container,
+        .science-section .container {
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+          padding-left: 16px;
+          padding-right: 16px;
+          box-sizing: border-box;
         }
       }
 
