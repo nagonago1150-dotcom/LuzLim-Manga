@@ -281,28 +281,11 @@
 
       /* Enhanced Footer with Better Visibility */
       .footer {
-        background: linear-gradient(135deg, rgba(139, 69, 19, 0.95), rgba(101, 67, 33, 0.98));
+        background: linear-gradient(135deg, rgba(248, 246, 243, 0.98), rgba(245, 242, 238, 0.95));
+        border-top: 2px solid rgba(139, 69, 19, 0.2);
         position: relative;
-        overflow: hidden;
-        padding: 60px 0 40px;
-        box-shadow: 0 -2px 10px rgba(139, 69, 19, 0.1);
-      }
-
-      .footer::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(139,69,19,0.1)"><path d="M0,0 C150,100 350,0 500,50 C650,100 850,0 1000,50 L1000,100 L0,100 Z"/></svg>') repeat-x;
-        background-size: 1000px 100px;
-        animation: wave 12s ease-in-out infinite;
-      }
-
-      @keyframes wave {
-        0%, 100% { transform: translateX(0); }
-        50% { transform: translateX(-30px); }
+        padding: 50px 0 30px;
+        box-shadow: 0 -2px 10px rgba(139, 69, 19, 0.05);
       }
 
       .footer-impact {
@@ -315,17 +298,15 @@
       .footer-title {
         font-size: 28px;
         font-weight: 600;
-        color: #FFFFFF;
+        color: var(--luxury-brown);
         margin-bottom: 16px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       }
 
       .footer-message {
         font-size: 16px;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(101, 67, 33, 0.9);
         margin-bottom: 24px;
         line-height: 1.6;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       }
 
       .footer-button {
@@ -335,7 +316,6 @@
         box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
         color: #FFFFFF;
         font-weight: 600;
-        text-shadow: none;
         transition: all 0.3s ease;
       }
 
@@ -355,15 +335,13 @@
       .footer-brand {
         font-size: 22px;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.95);
+        color: var(--luxury-brown);
         margin-bottom: 12px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       }
 
       .footer-copyright {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(101, 67, 33, 0.7);
         margin-bottom: 20px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       }
 
       .footer-nav {
@@ -374,13 +352,12 @@
       }
 
       .footer-nav a {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(101, 67, 33, 0.8);
         transition: color 0.3s ease;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       }
 
       .footer-nav a:hover {
-        color: rgba(255, 255, 255, 1);
+        color: var(--luxury-brown);
       }
 
       /* Products Detail Width Constraint */
@@ -1179,7 +1156,7 @@
             <img src="products/link%2bu_KV_1206_small.jpg" alt="LuzLim フェムケアソープ" class="product-image" loading="lazy">
             <h2>LuzLimを一度<br>お試しになりませんか？</h2>
             <p class="price">
-              <span class="trial-label">初回限定</span>
+              <span class="trial-label">特別価格</span>
               <span class="special">¥1,980</span>
               <span class="tax">（税込）</span>
             </p>
@@ -1192,7 +1169,6 @@
               <li>国内生産</li>
               <li>毎日使用OK</li>
             </ul>
-            <p class="limit-notice">※初回限定価格</p>
           </div>
         </div>
       </section>
@@ -1432,8 +1408,8 @@
           <div class="footer-info">
             <p class="footer-brand">LuzLim</p>
             <p class="footer-copyright">&copy; 2025 LuzLim. All rights reserved.</p>
-            <div class="company-info" style="margin: 20px 0; padding: 16px; background: rgba(255,255,255,0.1); border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);">
-              <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin: 0; text-align: center;">販売会社：Salus（株）</p>
+            <div class="company-info" style="margin: 20px 0; padding: 16px; background: rgba(139,69,19,0.05); border-radius: 8px; border: 1px solid rgba(139,69,19,0.1);">
+              <p style="color: rgba(101,67,33,0.8); font-size: 14px; margin: 0; text-align: center;">販売会社：Salus（株）</p>
             </div>
             <nav class="footer-nav">
               <a href="index-2.html">プライバシーポリシー</a>
