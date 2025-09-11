@@ -1005,48 +1005,80 @@
         text-align: center;
       }
 
-      /* モバイルでのレイアウト中央配置を強制 */
+      /* モバイル専用：レイアウト修正 */
       @media (max-width: 768px) {
-        .testimonials-section .container,
-        .cta-section .container,
-        .footer .container {
-          margin: 0 auto;
-          padding-left: 16px;
-          padding-right: 16px;
-          text-align: center;
+        /* 全体のレイアウトリセット */
+        body {
+          margin: 0 !important;
+          padding: 0 !important;
+          width: 100vw !important;
+          overflow-x: hidden !important;
         }
         
+        /* 全ての要素のボックスサイジング */
+        *, *::before, *::after {
+          box-sizing: border-box !important;
+        }
+        
+        /* 全コンテナの統一設定 */
+        .container {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 auto !important;
+          padding: 0 16px !important;
+          box-sizing: border-box !important;
+        }
+        
+        /* 全セクションの調整 */
+        section {
+          width: 100% !important;
+          margin: 0 !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          box-sizing: border-box !important;
+        }
+        
+        /* テキスト要素の中央配置強制 */
+        .section-title,
+        .section-subtitle,
+        .testimonials-section h2,
+        .cta-section h2,
+        .footer-title,
+        .footer-message {
+          text-align: center !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        
+        /* グリッドとカードレイアウトの調整 */
         .testimonials-grid {
-          margin: 0 auto 32px auto;
-          max-width: 100%;
+          display: block !important;
+          width: 100% !important;
+          margin: 0 auto !important;
         }
         
         .testimonial-card {
-          margin: 0 auto;
-          text-align: center;
+          width: 100% !important;
+          margin: 0 auto 20px auto !important;
+          text-align: center !important;
         }
         
-        .cta-section {
-          text-align: center;
-        }
-        
+        /* CTAセクションの調整 */
+        .cta-section,
+        .cta-content,
         .cta-box {
-          margin: 0 auto;
-          text-align: center;
+          text-align: center !important;
+          margin: 0 auto !important;
+          width: 100% !important;
         }
         
-        .footer {
-          text-align: center;
-        }
-        
-        .footer-impact {
-          text-align: center;
-          margin: 0 auto;
-        }
-        
+        /* フッターの調整 */
+        .footer,
+        .footer-impact,
         .footer-info {
-          text-align: center;
-          margin: 0 auto;
+          text-align: center !important;
+          margin: 0 auto !important;
+          width: 100% !important;
         }
       }
 
@@ -1238,7 +1270,7 @@
       <section class="science-section">
         <div class="container">
           <h2 class="section-title">LuzLimの安心・安全</h2>
-          <p class="section-subtitle">医学的根拠と自然由来成分で、<br>デリケートゾーンをやさしくケア</p>
+          <p class="section-subtitle">医学的根拠と自然由来成分で、デリケートゾーンをやさしくケア</p>
           
           <div class="science-natural-grid">
             <div class="science-column">
