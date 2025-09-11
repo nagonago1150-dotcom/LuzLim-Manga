@@ -886,6 +886,13 @@
         .section-subtitle br {
           display: none;
         }
+        
+        /* モバイルでの文字途切れ防止 */
+        .section-subtitle {
+          padding: 0 20px;
+          word-break: keep-all;
+          overflow-wrap: break-word;
+        }
 
         .footer-title br {
           display: none;
@@ -963,6 +970,51 @@
 
       .testimonial-center .profile {
         text-align: center;
+      }
+
+      /* モバイルでのレイアウト中央配置を強制 */
+      @media (max-width: 768px) {
+        .testimonials-section .container,
+        .cta-section .container,
+        .footer .container {
+          margin: 0 auto;
+          padding-left: 16px;
+          padding-right: 16px;
+          text-align: center;
+        }
+        
+        .testimonials-grid {
+          margin: 0 auto 32px auto;
+          max-width: 100%;
+        }
+        
+        .testimonial-card {
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .cta-section {
+          text-align: center;
+        }
+        
+        .cta-box {
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .footer {
+          text-align: center;
+        }
+        
+        .footer-impact {
+          text-align: center;
+          margin: 0 auto;
+        }
+        
+        .footer-info {
+          text-align: center;
+          margin: 0 auto;
+        }
       }
 
       /* モバイル専用改行 */
