@@ -507,6 +507,18 @@
 
       /* Mobile Responsive Enhancements */
       @media (max-width: 768px) {
+        /* 全体のモバイル調整 */
+        body {
+          overflow-x: hidden;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
         .logo {
           font-size: 24px;
         }
@@ -523,6 +535,8 @@
         /* ヘッダーの調整 */
         .header {
           padding: 16px 0;
+          width: 100%;
+          margin: 0;
         }
 
       /* 広告表示ラベル */
@@ -732,7 +746,20 @@
 
         /* ページ全体の余白調整 */
         .container {
-          padding: 0 16px;
+          padding: 0 16px !important;
+          margin: 0 auto !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+        }
+        
+        /* 全セクションの幅とマージン調整 */
+        section {
+          width: 100% !important;
+          margin: 0 !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          box-sizing: border-box !important;
         }
 
         /* CTA boxのモバイル調整 */
@@ -889,9 +916,15 @@
         
         /* モバイルでの文字途切れ防止 */
         .section-subtitle {
-          padding: 0 20px;
-          word-break: keep-all;
-          overflow-wrap: break-word;
+          padding: 0 20px !important;
+          word-break: keep-all !important;
+          overflow-wrap: break-word !important;
+          white-space: normal !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+          text-align: center !important;
+          font-size: 16px !important;
+          line-height: 1.6 !important;
         }
 
         .footer-title br {
