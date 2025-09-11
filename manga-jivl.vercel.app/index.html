@@ -917,14 +917,15 @@
         /* モバイルでの文字途切れ防止 */
         .section-subtitle {
           padding: 0 20px !important;
-          word-break: keep-all !important;
-          overflow-wrap: break-word !important;
-          white-space: normal !important;
-          max-width: 100% !important;
-          box-sizing: border-box !important;
+          font-size: 14px !important;
+          line-height: 1.5 !important;
           text-align: center !important;
-          font-size: 16px !important;
-          line-height: 1.6 !important;
+          max-width: 100% !important;
+          width: 100% !important;
+          margin: 0 auto !important;
+          box-sizing: border-box !important;
+          word-wrap: break-word !important;
+          hyphens: auto !important;
         }
 
         .footer-title br {
@@ -1005,80 +1006,68 @@
         text-align: center;
       }
 
-      /* モバイル専用：レイアウト修正 */
+      /* モバイル専用レイアウト修正 */
       @media (max-width: 768px) {
-        /* 全体のレイアウトリセット */
+        /* 基本レイアウト */
         body {
-          margin: 0 !important;
-          padding: 0 !important;
-          width: 100vw !important;
-          overflow-x: hidden !important;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          overflow-x: hidden;
         }
         
-        /* 全ての要素のボックスサイジング */
-        *, *::before, *::after {
-          box-sizing: border-box !important;
-        }
-        
-        /* 全コンテナの統一設定 */
         .container {
-          width: 100% !important;
-          max-width: 100% !important;
-          margin: 0 auto !important;
-          padding: 0 16px !important;
-          box-sizing: border-box !important;
+          width: 100%;
+          max-width: 100%;
+          margin: 0 auto;
+          padding: 0 16px;
+          box-sizing: border-box;
         }
         
-        /* 全セクションの調整 */
-        section {
-          width: 100% !important;
-          margin: 0 !important;
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-          box-sizing: border-box !important;
-        }
-        
-        /* テキスト要素の中央配置強制 */
+        /* 中央配置の強制 */
         .section-title,
-        .section-subtitle,
-        .testimonials-section h2,
-        .cta-section h2,
-        .footer-title,
-        .footer-message {
-          text-align: center !important;
-          margin-left: auto !important;
-          margin-right: auto !important;
+        .section-subtitle {
+          text-align: center;
+          margin: 0 auto;
+          width: 100%;
         }
         
-        /* グリッドとカードレイアウトの調整 */
+        /* testimonialsセクション修正 */
+        .testimonials-section {
+          width: 100%;
+        }
+        
+        .testimonials-section .container {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 16px;
+        }
+        
         .testimonials-grid {
-          display: block !important;
-          width: 100% !important;
-          margin: 0 auto !important;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 100%;
+          margin: 0 auto;
         }
         
         .testimonial-card {
-          width: 100% !important;
-          margin: 0 auto 20px auto !important;
-          text-align: center !important;
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
         }
         
-        /* CTAセクションの調整 */
+        /* CTAとフッター */
         .cta-section,
-        .cta-content,
-        .cta-box {
-          text-align: center !important;
-          margin: 0 auto !important;
-          width: 100% !important;
+        .footer {
+          width: 100%;
+          text-align: center;
         }
         
-        /* フッターの調整 */
-        .footer,
-        .footer-impact,
-        .footer-info {
-          text-align: center !important;
-          margin: 0 auto !important;
-          width: 100% !important;
+        .cta-section .container,
+        .footer .container {
+          width: 100%;
+          margin: 0 auto;
         }
       }
 
