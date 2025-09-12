@@ -731,6 +731,31 @@
         }
       }
 
+      /* クリック可能要素のホバー効果 */
+      .comic-scene a img:hover,
+      .product-image:hover,
+      .product-step img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        cursor: pointer;
+      }
+
+      .logo:hover,
+      .tagline:hover,
+      .section-title:hover,
+      .review-title:hover,
+      .product-info h3:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+      }
+
+      .price:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
       /* さらに小さなスマホ向け（375px以下） */
       @media (max-width: 375px) {
         .container {
@@ -1090,8 +1115,10 @@
       <header class="header">
         <div class="pr-label">PR：Salus（株）</div>
         <div class="container">
-          <h1 class="logo">LuzLim</h1>
-          <p class="tagline">デリケートゾーンケア</p>
+          <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="logo">
+            <h1 class="logo">LuzLim</h1>
+            <p class="tagline">デリケートゾーンケア</p>
+          </a>
         </div>
       </header>
 
@@ -1099,35 +1126,35 @@
       <section class="comic-viewer">
         <div class="comic-container">
           <figure class="comic-scene">
-            <img src="manga/01.png" alt="忙しい朝の悩み" loading="lazy" />
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="manga-image"><img src="manga/01.png" alt="忙しい朝の悩み" loading="lazy" /></a>
             <figcaption>
               <p class="narration">忙しい朝、ふと鏡を見てどんより…。<br>もしかして、ニオイやムレのせい？</p>
             </figcaption>
           </figure>
 
           <figure class="comic-scene">
-            <img src="manga/02.png" alt="同僚の秘密" loading="lazy" />
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="manga-image"><img src="manga/02.png" alt="同僚の秘密" loading="lazy" /></a>
             <figcaption>
               <p class="narration">輝いている同僚の秘密は、オシャレなボトル。<br>「デリケートゾーンの悩みが消えたの！」</p>
             </figcaption>
           </figure>
 
           <figure class="comic-scene">
-            <img src="manga/03.png" alt="LuzLimでケア" loading="lazy" />
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="manga-image"><img src="manga/03.png" alt="LuzLimでケア" loading="lazy" /></a>
             <figcaption>
               <p class="narration">ワンプッシュのもっちり泡で、<br>肌に優しく摩擦レス。<br>良い香りに包まれて、<br>面倒なケアがこれ１本で。</p>
             </figcaption>
           </figure>
 
           <figure class="comic-scene">
-            <img src="manga/04.png" alt="快適な毎日" loading="lazy" />
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="manga-image"><img src="manga/04.png" alt="快適な毎日" loading="lazy" /></a>
             <figcaption>
               <p class="narration">翌朝、鏡の中の私に自信が。<br>ニオイも気分もスッキリ！<br>これが「がんばりすぎない美しさ」。</p>
             </figcaption>
           </figure>
 
           <figure class="comic-scene">
-            <img src="manga/05.png" alt="LuzLimで自信を" loading="lazy" />
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="manga-image"><img src="manga/05.png" alt="LuzLimで自信を" loading="lazy" /></a>
             <figcaption>
               <p class="narration">悩みの根本から解決！<br>たった1本で、<br>「がんばりすぎない美しさ」へ。</p>
             </figcaption>
@@ -1144,14 +1171,16 @@
       <section class="cta-section primary">
         <div class="container">
           <div class="cta-content">
-            <img src="products/link%2bu_KV_1206_small.jpg" alt="LuzLim フェムケアソープ" class="product-image" loading="lazy">
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="product-image"><img src="products/link%2bu_KV_1206_small.jpg" alt="LuzLim フェムケアソープ" class="product-image" loading="lazy"></a>
             <h2>LuzLimを一度<br>お試しになりませんか？</h2>
-            <p class="price">
-              <span class="trial-label">特別価格</span>
-              <span class="special">¥1,980</span>
-              <span class="tax">（税込）</span>
-            </p>
-            <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button" data-ga-event="cta_click" data-ga-label="top">
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="price-click" style="text-decoration: none; color: inherit;">
+              <p class="price">
+                <span class="trial-label">特別価格</span>
+                <span class="special">¥1,980</span>
+                <span class="tax">（税込）</span>
+              </p>
+            </a>
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" class="cta-button" data-ga-event="cta_click" data-ga-label="top">
               LuzLimを試す
             </a>
             <ul class="benefits">
@@ -1168,16 +1197,20 @@
       <section class="products-section">
         <div class="container">
           <div class="routine-header">
-            <h2 class="section-title">LuzLimの4つの特徴<br>デリケートゾーンケア</h2>
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="section-title" style="text-decoration: none; color: inherit;">
+              <h2 class="section-title">LuzLimの4つの特徴<br>デリケートゾーンケア</h2>
+            </a>
           </div>
           
           <div class="products-detail">
             <article class="product-step">
               <div class="step-number">特徴 01</div>
               <div class="product-content">
-                <img src="products/feature01.png" alt="LuzLim抗菌・消臭効果" loading="lazy">
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="feature-image"><img src="products/feature01.png" alt="LuzLim抗菌・消臭効果" loading="lazy"></a>
                 <div class="product-info">
-                  <h3>ニオイ対策</h3>
+                  <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="product-name" style="text-decoration: none; color: inherit;">
+                    <h3>ニオイ対策</h3>
+                  </a>
                   <p class="product-concept">抗菌・消臭のWアプローチ</p>
                   <ul class="product-features">
                     <li>抗菌成分：o-シメン-5-オール配合</li>
@@ -1193,9 +1226,11 @@
             <article class="product-step">
               <div class="step-number">特徴 02</div>
               <div class="product-content">
-                <img src="products/feature02.png" alt="LuzLimバリア機能・高保湿" loading="lazy">
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="feature-image"><img src="products/feature02.png" alt="LuzLimバリア機能・高保湿" loading="lazy"></a>
                 <div class="product-info">
-                  <h3>保湿・バリア機能</h3>
+                  <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="product-name" style="text-decoration: none; color: inherit;">
+                    <h3>保湿・バリア機能</h3>
+                  </a>
                   <p class="product-concept">乾燥を防いで肌を守る</p>
                   <ul class="product-features">
                     <li>ヒアルロン酸配合</li>
@@ -1210,9 +1245,11 @@
             <article class="product-step">
               <div class="step-number">特徴 03</div>
               <div class="product-content">
-                <img src="products/feature03.png" alt="LuzLimやさしい洗い心地・濃密泡" loading="lazy">
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="feature-image"><img src="products/feature03.png" alt="LuzLimやさしい洗い心地・濃密泡" loading="lazy"></a>
                 <div class="product-info">
-                  <h3>やさしい洗い心地</h3>
+                  <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="product-name" style="text-decoration: none; color: inherit;">
+                    <h3>やさしい洗い心地</h3>
+                  </a>
                   <p class="product-concept">摩擦レスで肌にやさしく</p>
                   <ul class="product-features">
                     <li>泡で出てくる濃密泡タイプ</li>
@@ -1227,9 +1264,11 @@
             <article class="product-step">
               <div class="step-number">特徴 04</div>
               <div class="product-content">
-                <img src="products/feature04.png" alt="LuzLimルズ・ムスクの香り・香水のような贅沢な香り" loading="lazy">
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="feature-image"><img src="products/feature04.png" alt="LuzLimルズ・ムスクの香り・香水のような贅沢な香り" loading="lazy"></a>
                 <div class="product-info">
-                  <h3>ルズ・ムスクの香り</h3>
+                  <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="product-name" style="text-decoration: none; color: inherit;">
+                    <h3>ルズ・ムスクの香り</h3>
+                  </a>
                   <p class="product-concept">香水のような贅沢な香り</p>
                   <ul class="product-features">
                     <li>トップ：グレープフルーツ</li>
@@ -1247,7 +1286,9 @@
       <!-- Science × Natural -->
       <section class="science-section">
         <div class="container">
-          <h2 class="section-title">LuzLimの安心・安全</h2>
+          <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="section-title" style="text-decoration: none; color: inherit;">
+            <h2 class="section-title">LuzLimの安心・安全</h2>
+          </a>
           <p class="section-subtitle">医学的根拠と自然由来成分で、<br>やさしくケア</p>
           
           <div class="science-natural-grid">
@@ -1299,12 +1340,16 @@
       <!-- お客様の声 -->
       <section class="testimonials-section">
         <div class="container">
-          <h2 class="section-title">「悩みが解決した」<br>実感の声</h2>
+          <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="section-title" style="text-decoration: none; color: inherit;">
+            <h2 class="section-title">「悩みが解決した」<br>実感の声</h2>
+          </a>
           
           <div class="testimonials-grid">
             <article class="testimonial-card testimonial-left">
               <div class="review-content">
-                <h3 class="review-title">「デリケートゾーンの臭い対策に買いました」</h3>
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="review-title" style="text-decoration: none; color: inherit;">
+                  <h3 class="review-title">「デリケートゾーンの臭い対策に買いました」</h3>
+                </a>
                 <p class="review-text">今までボディソープで洗っていましたが、<br>ラズリムのフェムケアソープを使ったら<br>夜までニオイが気にならなくなりました！</p>
               </div>
               <div class="user-info">
@@ -1314,7 +1359,9 @@
 
             <article class="testimonial-card testimonial-right">
               <div class="review-content">
-                <h3 class="review-title">「泡だてなくてもそのまま出てくるので、<br class="br-mobile">すごく楽！」</h3>
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="review-title" style="text-decoration: none; color: inherit;">
+                  <h3 class="review-title">「泡だてなくてもそのまま出てくるので、<br class="br-mobile">すごく楽！」</h3>
+                </a>
                 <p class="review-text">もっちり濃密泡で出てくるので便利です。<br>洗い上がりもしっとりしています。</p>
               </div>
               <div class="user-info">
@@ -1324,7 +1371,9 @@
 
             <article class="testimonial-card testimonial-center">
               <div class="review-content">
-                <h3 class="review-title">「年齢のせい？」と思ったニオイがスッキリ</h3>
+                <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="review-title" style="text-decoration: none; color: inherit;">
+                  <h3 class="review-title">「年齢のせい？」と思ったニオイがスッキリ</h3>
+                </a>
                 <p class="review-text">40代になってからニオイが強くなったような気がして、<br>「年齢のせいかな...」と落ち込んでいました。<br>でもラズリムを使ってから気にならなくなりました！</p>
               </div>
               <div class="user-info">
@@ -1351,13 +1400,15 @@
               <p class="regular-price" style="font-size: 16px; color: #888; text-decoration: line-through; margin-bottom: 8px;">通常価格 ¥4,950</p>
               <p class="discount-badge" style="background: linear-gradient(45deg, #FF6B6B, #FF8E8E); color: white; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: bold; display: inline-block; margin-bottom: 8px;">初回限定40%OFF</p>
               <p class="additional-discount" style="background: linear-gradient(45deg, #4ECDC4, #44A08D); color: white; padding: 4px 12px; border-radius: 20px; font-size: 14px; font-weight: bold; display: inline-block; margin-bottom: 16px;">さらに1000円OFF</p>
-              <p class="price">
-                <span class="special">¥1,980</span>
-                <span class="tax">（税込）</span>
-              </p>
+              <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" data-ga-event="cta_click" data-ga-label="final-price-click" style="text-decoration: none; color: inherit;">
+                <p class="price">
+                  <span class="special">¥1,980</span>
+                  <span class="tax">（税込）</span>
+                </p>
+              </a>
             </div>
             
-            <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button large" data-ga-event="cta_click" data-ga-label="bottom">
+            <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" class="cta-button large" data-ga-event="cta_click" data-ga-label="bottom">
               LuzLimを試す
             </a>
             
@@ -1390,7 +1441,7 @@
             <h3 class="footer-title">あなたの自信を、<br>LuzLimと共に</h3>
             <p class="footer-message">毎日のケアで、<br>もっと自分らしく輝く未来へ</p>
             <div class="footer-cta">
-              <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button footer-button" data-ga-event="cta_click" data-ga-label="footer">
+              <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" class="cta-button footer-button" data-ga-event="cta_click" data-ga-label="footer">
                 今すぐLuzLimを<br>始める
               </a>
             </div>
@@ -1413,7 +1464,7 @@
 
     <!-- 追従CTA（スマホ用） -->
     <div class="sticky-cta mobile-only">
-      <a href="https://ac-ld.catsys.jp/35cdb41fDc62db0D/cl/?bId=d69VVc9e" class="cta-button" data-ga-event="cta_click" data-ga-label="sticky">
+      <a href="https://www.google.com/url?q=https://shop.salus-inc.com/lp?u%3Dts_test_250716_LCP_LUZLIM_SD&sa=D&source=editors&ust=1757669077620439&usg=AOvVaw34lUjha0hI4eKfi5WLAG5r" class="cta-button" data-ga-event="cta_click" data-ga-label="sticky">
         LuzLim¥1,980
       </a>
     </div>
